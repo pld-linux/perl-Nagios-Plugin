@@ -61,6 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/Nagios
 %{perl_vendorlib}/Nagios/*.pm
 %{perl_vendorlib}/Nagios/Plugin
 %{_mandir}/man3/*
