@@ -8,7 +8,7 @@
 Summary:	Nagios::Plugin - A family of perl modules to streamline writing Nagios plugins
 Name:		perl-Nagios-Plugin
 Version:	0.23
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -24,6 +24,9 @@ BuildRequires:	perl(Math::Calc::Units)
 BuildRequires:	perl(Params::Validate)
 BuildRequires:	perl(Test::More) >= 0.62
 %endif
+# Not catched by `use base qw(Class::Accessor::Fast)'; construct
+Requires:	perl-Class-Accessor
+Requires:	perl-Config-Tiny
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
