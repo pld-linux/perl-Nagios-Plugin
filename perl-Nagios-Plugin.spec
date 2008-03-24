@@ -5,7 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Nagios
 %define	pnam	Plugin
-Summary:	Nagios::Plugin - A family of perl modules to streamline writing Nagios plugins
+Summary:	Nagios::Plugin - A family of Perl modules to streamline writing Nagios plugins
+Summary(pl.UTF-8):	Nagios::Plugin - rodzina modułów Perla ułatwiająca pisanie wtyczek Nagiosa
 Name:		perl-Nagios-Plugin
 Version:	0.23
 Release:	2
@@ -18,10 +19,10 @@ URL:		http://search.cpan.org/dist/Nagios-Plugin/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(Class::Accessor)
-BuildRequires:	perl(Config::Tiny)
-BuildRequires:	perl(Math::Calc::Units)
-BuildRequires:	perl(Params::Validate)
+BuildRequires:	perl-Class-Accessor
+BuildRequires:	perl-Config-Tiny
+BuildRequires:	perl-Math-Calc-Units
+BuildRequires:	perl-Params-Validate
 BuildRequires:	perl(Test::More) >= 0.62
 %endif
 # Not catched by `use base qw(Class::Accessor::Fast)'; construct
@@ -40,6 +41,18 @@ a useful subset of the available functionality.
 
 The purpose of the collection is to make it as simple as possible for
 developers to create plugins that conform the Nagios Plugin guidelines
+<http://nagiosplug.sourceforge.net/developer-guidelines.html>.
+
+%description -l pl.UTF-8
+Nagios::Plugin i związane z nim moduły Nagios::Plugin::* to rodzina
+modułów Perla ułatwiająca pisanie wtyczek Nagiosa. Główne moduły dla
+użytkownika końcowego to Nagios::Plugin, udostępniający zorientowany
+obiektowo interfejs do całej kolekcji Nagios::Plugin::*, oraz
+Nagios::Plugin::Functions, udostępniający prostszy, funkcyjny
+interfejs do przydatnego podzbioru dostępnej funkcjonalności.
+
+Celem tej kolekcji jest jak największe ułatwienie programistom
+tworzenia wtyczek zgodnych z zaleceniami dla wtyczek Nagiosa:
 <http://nagiosplug.sourceforge.net/developer-guidelines.html>.
 
 %prep
