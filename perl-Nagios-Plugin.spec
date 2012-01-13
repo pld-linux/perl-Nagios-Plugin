@@ -8,13 +8,13 @@
 Summary:	Nagios::Plugin - A family of Perl modules to streamline writing Nagios plugins
 Summary(pl.UTF-8):	Nagios::Plugin - rodzina modułów Perla ułatwiająca pisanie wtyczek Nagiosa
 Name:		perl-Nagios-Plugin
-Version:	0.33
+Version:	0.36
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/T/TO/TONVOON/Nagios-Plugin-%{version}.tar.gz
-# Source0-md5:	7f5e00a3d683b1d39b169d9d772de33b
+# Source0-md5:	b897f6d5d66a655dde7caec579efcf2e
 URL:		http://search.cpan.org/dist/Nagios-Plugin/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
