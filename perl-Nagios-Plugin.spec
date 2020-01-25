@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Nagios
 %define	pnam	Plugin
 Summary:	Nagios::Plugin - A family of Perl modules to streamline writing Nagios plugins
